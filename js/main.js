@@ -19,7 +19,7 @@
     if(e.which === 13) {
       // Grabbing new todo text from input
       let todoText = $(this).val();
-      $("ul").append(`<li><span><i class="far fa-trash-alt"></i></span>${todoText}</li>`);
+      $("ul").append(`<li class="appcontainer__item"><span><i class="far fa-trash-alt"></i></span>${todoText}</li>`);
       $(this).val("");
     }
   });
