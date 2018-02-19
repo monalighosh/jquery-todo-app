@@ -19,8 +19,13 @@
     if(e.which === 13) {
       // Grabbing new todo text from input
       let todoText = $(this).val();
-      $("ul").append(`<li><span>X</span>${todoText}</li>`);
+      $("ul").append(`<li><span><i class="far fa-trash-alt"></i></span>${todoText}</li>`);
       $(this).val("");
     }
+  });
+
+  // Toggle input 
+  $(".fa-plus").on("click", function(){
+    $("input[type='text']").fadeToggle("slow");
   });
 })(jQuery);
